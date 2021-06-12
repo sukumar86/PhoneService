@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  #  phone_db:
+  #    image: postgres
+  #    ports:
+  #      - "5432:5432"
+  #    environment:
+  #      POSTGRES_PASSWORD: postgres
+  phone_app_h2:
+    #  phone_app_postgres:
+    image: phoneservice:dev
+    ports:
+      - "2000:8080"
+    #      - "1000:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: h2
+#      SPRING_PROFILES_ACTIVE: postgres
+#    depends_on:
+#      - phone_db

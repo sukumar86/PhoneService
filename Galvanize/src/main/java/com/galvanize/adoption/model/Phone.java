@@ -1,12 +1,14 @@
-package com.galvanize.Galvanize.model;
+package com.galvanize.adoption.model;
+
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.math.BigInteger;
 
 @Entity
+@EqualsAndHashCode
 public class Phone {
 
         @Id
@@ -59,9 +61,10 @@ public class Phone {
 //
 //        @Override
 //        public String toString() {
-//            return "Pupper{" +
-//                    "name='" + name + '\'' +
-//                    ", breed='" + breed + '\'' +
+//            return "Phone{" +
+//                    "firstname='" + firstname + '\'' +
+//                    ", lastname='" + lastname + '\'' +
+//                    ", phoneno='" + phoneno + '\'' +
 //                    '}';
 //        }
 //
